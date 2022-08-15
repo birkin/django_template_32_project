@@ -27,7 +27,7 @@ export DJ_TMPLT32__ADMINS_JSON='
     ]
     '
 
-export DJ_TMPLT32__ALLOWED_HOSTS='["127.0.0.1", "127.0.0.1:8000", "0.0.0.0:8000", "localhost:8000"]'  # must be json
+export DJ_TMPLT32__ALLOWED_HOSTS_JSON='["127.0.0.1", "127.0.0.1:8000", "0.0.0.0:8000", "localhost:8000"]'  # must be json
 
 export DJ_TMPLT32__DATABASES_JSON='
     {
