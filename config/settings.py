@@ -27,6 +27,8 @@ SECRET_KEY = os.environ['DJ_TMPLT32__SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = json.loads( os.environ['DJ_TMPLT32__DEBUG_JSON'] )
 
+ADMINS = json.loads( os.environ['DJ_TMPLT32__ADMINS_JSON'] )
+
 ALLOWED_HOSTS = json.loads( os.environ['DJ_TMPLT32__ALLOWED_HOSTS_JSON'] )  # list
 
 
@@ -115,6 +117,13 @@ USE_TZ = False
 
 STATIC_URL = os.environ['DJ_TMPLT32__STATIC_URL']
 STATIC_ROOT = os.environ['DJ_TMPLT32__STATIC_ROOT']
+
+
+# Email
+SERVER_EMAIL = os.environ['DJ_TMPLT32__SERVER_EMAIL']
+EMAIL_HOST = os.environ['DJ_TMPLT32__EMAIL_HOST']
+EMAIL_PORT = int( os.environ['DJ_TMPLT32__EMAIL_PORT'] )
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
