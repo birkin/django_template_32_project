@@ -1,34 +1,36 @@
-##### overview
+#### overview
 
-Template [runserver](https://docs.djangoproject.com/en/1.11/ref/django-admin/#runserver) and [passenger](https://www.phusionpassenger.com)-compatible [django](https://www.djangoproject.com) project.
+Purpose: to enable easy new-project-creation from a template.
+
+This template creates a project (with a single app) that can easily be run by [runserver](https://docs.djangoproject.com/en/3.2/ref/django-admin/#runserver), or docker, and is [passenger](https://www.phusionpassenger.com)-compatible [django](https://www.djangoproject.com) project.
 
 ---
 
 
-##### todo checklist
+#### checklist
 
 (eventually pieces of this could be scripted)
 
 - assumes python 3.x
 
 - main
-    - make 'stuff' dir
-    - make env
-
-            /path/to/python3 -m venv /path/to/project_x_stuff/env_x
-
-        - source new env, and run: `pip install --upgrade pip`
-    - git clone existing app, or...
-        - `git clone https://github.com/birkin/django_template_project.git ./project_x`
+    - make 'x_project_stuff' dir and cd into it
+    - git clone this repo...
+        - `git clone git@github.com:birkin/django_template_32_project.git ./x_project`
             - remove the .git/ dir
-        - set up in SourceTree (git init)
-        - push to GitHub
+        - set up in GitHub Desktop or alternate-app (git init)
+        - push to GitHub -- herezz
     - make sublime project
     - update names
         - change all `django_template_project` references to name of project
         - change all `app_x` references to actual name of app
         - include in above app_x and app_x_templates directories
         - change all `DJANGO_TEMPLATE__` settings references to name of project-settings prefix
+    - make env
+
+            /path/to/python3 -m venv /path/to/project_x_stuff/env_x
+
+        - source new env, and run: `pip install --upgrade pip`
     - with new env activated, pip update it from requirements.txt
         - note that version of Django is _partially_ specified -- this is the latest [long-term-support version](https://docs.djangoproject.com/en/dev/internals/release-process/)
         - update requirements.txt with versions
