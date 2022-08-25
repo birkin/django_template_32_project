@@ -18,13 +18,13 @@ This template creates a project (with a single app) that can easily be run by [r
     - git clone this repo...
         - `git clone git@github.com:birkin/django_template_32_project.git ./x_project`
             - remove the .git/ dir
-        - set up in GitHub Desktop or alternate-app (git init)
-        - push to GitHub -- herezz
+        - `$ git init`, then set up in GitHub Desktop or alternate-app
+        - push to GitHub
     - make sublime project
     - update names
         - change all `django_template_project` references to name of project
         - change all `app_x` references to actual name of app
-        - include in above app_x and app_x_templates directories
+        - include in above app_x directory
         - change all `DJANGO_TEMPLATE__` settings references to name of project-settings prefix
     - make env
 
