@@ -20,7 +20,7 @@ This template creates a project (with a single app) that can easily be run by [r
             - remove the .git/ dir
         - `$ git init`, then set up in GitHub Desktop or alternate-app
         - push to GitHub
-    - make sublime project
+    - make sublime/vs_code project
     - update names
         - change all `django_template_project` references to name of project
         - change all `app_x` references to actual name of app
