@@ -32,9 +32,7 @@ This template creates a project (with a single app) that can easily be run by [r
 
         - source new env, and run: `pip install --upgrade pip`
     - with new env activated, pip update it from requirements.txt
-        - note that version of Django is _partially_ specified -- this is the latest [long-term-support version](https://docs.djangoproject.com/en/dev/internals/release-process/)
-        - update requirements.txt with versions
-        - suggested: `pip install ipython` -- it'll make experimentation lots easier
+        - suggested for localdev: `pip install ipython` -- it'll make experimentation lots easier
 
 - log
     - make log dir, ensuring permissions are correct
