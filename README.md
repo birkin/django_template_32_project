@@ -96,18 +96,10 @@ This template creates a project (with a single app) that can easily be run by [r
         - setup apache handoff to python
         - restart apache if web-app
     - [site-checker](http://library.brown.edu/services/site_checker/status/) entry
-    - [software-tracker entry](https://library.brown.edu/projects/software/apps/)
     - cron work if necessary (besides possible django session work listed above)
         - update crontab via (one-line):
 
                 cd /to/main/dir; source ../env/bin/activate; ../env/bin/python ./the_script.py
-
----
-
-
-##### other
-
-- last [python 2.7.x version of the todo checklist](https://gist.github.com/birkin/04a0a124d49be02e3d58/0fa4732b15cb524aec00f20fb08a5c4c9f0e0742)
 
 ---
 
