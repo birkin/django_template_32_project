@@ -169,7 +169,7 @@ LOGGING = {
             'level': os.environ['DJ_TMPLT32__LOG_LEVEL'],
             'propagate': False
         },
-        # 'django.db.backends': {  # re-enable to check sql-queries! <https://docs.djangoproject.com/en/1.11/topics/logging/#django-db-backends>
+        # 'django.db.backends': {  # re-enable to check sql-queries! <https://docs.djangoproject.com/en/3.2/topics/logging/#django-db-backends>
         #     'handlers': ['logfile'],
         #     'level': os.environ.get(u'BUL_CBP__LOG_LEVEL'),
         #     'propagate': False

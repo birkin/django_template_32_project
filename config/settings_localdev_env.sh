@@ -54,7 +54,7 @@ export DJ_TMPLT32__LOG_LEVEL="DEBUG"
 
 export DJ_TMPLT32__CSRF_TRUSTED_ORIGINS_JSON='["localhost", "127.0.0.1"]'
 
-## https://docs.djangoproject.com/en/1.11/topics/cache/
+## https://docs.djangoproject.com/en/3.2/topics/cache/
 ## - TIMEOUT is in seconds (0 means don't cache); CULL_FREQUENCY defaults to one-third
 export DJ_TMPLT32__CACHES_JSON='
 {
