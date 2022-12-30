@@ -6,6 +6,8 @@ from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 from x_app.lib import version_helper
+from x_app.lib.version_helper import GatherCommitAndBranchData
+
 
 log = logging.getLogger(__name__)
 
