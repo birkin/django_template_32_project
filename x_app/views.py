@@ -1,7 +1,7 @@
 import datetime, json, logging
 
 from django.conf import settings as project_settings
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 from x_app.lib import version_helper
@@ -41,8 +41,10 @@ def error_check( request ):
 def version( request ):
     """ Returns basic branch and commit data. """
     rq_now = datetime.datetime.now()
-    commit = version_helper.get_commit()
-    branch = version_helper.get_branch()
+    gatherer = GatherCommitAndBranchData()
+    trio.run( gatherer.manage_git_calls )
+    commit = gatherer.commit
+    branch = gatherer.branch
     info_txt = commit.replace( 'commit', branch )
     context = version_helper.make_context( request, rq_now, info_txt )
     output = json.dumps( context, sort_keys=True, indent=2 )
