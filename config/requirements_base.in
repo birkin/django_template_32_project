@@ -1,3 +1,4 @@
 Django==3.2.15
 git+https://github.com/birkin/shellvars-py.git
-pip-tools==6.8.0
+pip-tools==6.12.1
+trio==0.22.0
