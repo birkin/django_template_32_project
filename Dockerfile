@@ -14,5 +14,4 @@ RUN mkdir /x_project_stuff/DBs
 
 ## set up the python environment
 COPY ./config/requirements.txt /x_project_stuff/code/
-RUN pip install -r ./requirements_localdev.txt
-## (optional-future: requirements_servers.txt)
+RUN pip install -r ./requirements.txt
