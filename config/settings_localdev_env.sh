@@ -34,7 +34,7 @@ export DJ_TMPLT32__DATABASES_JSON='
       "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "HOST": "",
-        "NAME": "../DB/x_project_files.sqlite3",
+        "NAME": "../DBs/x_project_files.sqlite",
         "PASSWORD": "",
         "PORT": "",
         "USER": ""
