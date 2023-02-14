@@ -18,6 +18,7 @@ log = logging.getLogger(__name__)
 
 
 def info(request):
+    log.debug( 'starting info()' )
     return HttpResponse( "Hello, world." )
 
 
