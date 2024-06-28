@@ -14,9 +14,9 @@ This template creates a project (with a single app) that can easily be run by [r
 - assumes python 3.x
 
 - main
-    - make 'django_auth_demo_stuff' dir and cd into it
+    - make 'x_project_stuff' dir and cd into it
     - git clone this repo...
-        - `git clone git@github.com:birkin/django_template_32_project.git ./django_auth_demo`
+        - `git clone git@github.com:birkin/django_template_32_project.git ./x_project`
             - remove the .git/ dir
         - `$ git init`, then set up in GitHub Desktop or alternate-app
         - push to GitHub

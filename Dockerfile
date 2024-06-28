@@ -8,10 +8,10 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 ## who doesn't love a "stuff" directory!  :)
-WORKDIR /django_auth_demo_stuff/code
-RUN mkdir /django_auth_demo_stuff/logs
-RUN mkdir /django_auth_demo_stuff/DBs
+WORKDIR /x_project_stuff/code
+RUN mkdir /x_project_stuff/logs
+RUN mkdir /x_project_stuff/DBs
 
 ## set up the python environment
-COPY ./config/requirements.txt /django_auth_demo_stuff/code/
+COPY ./config/requirements.txt /x_project_stuff/code/
 RUN pip install -r ./requirements.txt

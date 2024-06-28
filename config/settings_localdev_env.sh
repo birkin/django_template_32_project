@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-## LOCALDEV settings for django `django_auth_demo`
+## LOCALDEV settings for django `x_project`
 ##
 ## This file is loaded by `env/bin/activate` when running locally...
 ## ...and by `project/config/passenger_wsgi.py` on our servers.
@@ -34,7 +34,7 @@ export DJ_TMPLT32__DATABASES_JSON='
       "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "HOST": "",
-        "NAME": "../DBs/django_auth_demo_files.sqlite",
+        "NAME": "../DBs/x_project_files.sqlite",
         "PASSWORD": "",
         "PORT": "",
         "USER": ""
@@ -49,7 +49,7 @@ export DJ_TMPLT32__EMAIL_HOST="localhost"
 export DJ_TMPLT32__EMAIL_PORT="1026"  # will be converted to int in settings.py
 export DJ_TMPLT32__SERVER_EMAIL="donotreply_x-project@domain.edu"
 
-export DJ_TMPLT32__LOG_PATH="../logs/django_auth_demo.log"
+export DJ_TMPLT32__LOG_PATH="../logs/x_project.log"
 export DJ_TMPLT32__LOG_LEVEL="DEBUG"
 
 export DJ_TMPLT32__CSRF_TRUSTED_ORIGINS_JSON='["localhost", "127.0.0.1"]'
@@ -96,7 +96,7 @@ export DJ_TMPLT32__TEST_META_DCT_JSON='{
   "Shibboleth-isMemberOf": "aa:bb:cc;dd:ee:ff;the:group;gg:hh"
 }'
 
-export DJ_TMPLT32__LOGIN_PROBLEM_EMAIL="django_auth_demo_problems@domain.edu"
+export DJ_TMPLT32__LOGIN_PROBLEM_EMAIL="x_project_problems@domain.edu"
 
 
 ## end --------------------------------------------------------------
