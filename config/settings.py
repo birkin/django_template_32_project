@@ -17,6 +17,7 @@ from dotenv import load_dotenv, find_dotenv
 load_dotenv( find_dotenv(raise_error_if_not_found=True) )
 
 
+## django project settings ------------------------------------------
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -175,7 +176,7 @@ LOGGING = {
         },
         # 'django.db.backends': {  # re-enable to check sql-queries! <https://docs.djangoproject.com/en/3.2/topics/logging/#django-db-backends>
         #     'handlers': ['logfile'],
-        #     'level': os.environ.get(u'BUL_CBP__LOG_LEVEL'),
+        #     'level': os.environ.get(u'DJ_TMPLT32__LOG_LEVEL'),
         #     'propagate': False
         # },
     }
