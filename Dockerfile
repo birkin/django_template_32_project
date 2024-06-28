@@ -1,5 +1,7 @@
 ## syntax=docker/dockerfile:1
 
+## old; should be carefully tested
+
 ## python 3.9x needed due to an error in 3.10 I didn't log
 FROM python:3.9
 
