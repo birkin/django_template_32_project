@@ -5,12 +5,12 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: x_project-web-container
+    container_name: django_auth_demo-web-container
     volumes:
-      - ../:/x_project_stuff
-      - ../DBs:/x_project_stuff/DBs
-      - ../logs:/x_project_stuff/logs
-      - .:/x_project_stuff/code
+      - ../:/django_auth_demo_stuff
+      - ../DBs:/django_auth_demo_stuff/DBs
+      - ../logs:/django_auth_demo_stuff/logs
+      - .:/django_auth_demo_stuff/code
     ports:
       - "8000:8000"
 

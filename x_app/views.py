@@ -38,7 +38,7 @@ def error_check( request ):
         log.debug( 'triggering exception' )
         raise Exception( 'Raising intentional exception.' )
     else:
-        log.debug( 'returing 404' )
+        log.debug( 'returning 404' )
         return HttpResponseNotFound( '<div>404 / Not Found</div>' )
 
 
